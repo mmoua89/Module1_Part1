@@ -11,10 +11,11 @@ Assignment: Module 1, Part 1
 def main():
     num1 = input("Enter num1: ")
     num2 = input("Enter num2: ")
-    print('Their sum:', add(num1, num2))
+    print('Their sum:')
+    print(f'\t{num1} + {num2} =', add(num1, num2))
     print('Their subtraction results:')
-    print('\tResult1:', subtract(num1, num2))
-    print('\tresult2:', subtract(num2, num1))
+    print(f'\tResult1: {num1} - {num2} =', subtract(num1, num2))
+    print(f'\tResult2: {num2} - {num1} =', subtract(num2, num1))
     print('Their difference:', difference(num1, num2))
 
 def add(num1, num2) -> str:
@@ -25,7 +26,7 @@ def add(num1, num2) -> str:
     :return: a result as string
     """
     if not valid_number(num1) or not valid_number(num2):
-        return "Invalid input numbers"
+        return "Invalid input number(s)"
 
     return str(int(num1) + int(num2))
 
@@ -37,7 +38,7 @@ def difference(num1, num2) -> str:
     :return: a result as string
     """
     if not valid_number(num1) or not valid_number(num2):
-        return "Invalid input numbers"
+        return "Invalid input number(s)"
 
     if int(num1) > int(num2):
         return str(int(num1) - int(num2))
@@ -52,7 +53,7 @@ def subtract(num1, num2) -> str:
     :return: a result as string
     """
     if not valid_number(num1) or not valid_number(num2):
-        return "Invalid input numbers"
+        return "Invalid input number(s)"
 
     return str(int(num1) - int(num2))
 
