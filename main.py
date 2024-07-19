@@ -17,7 +17,7 @@ def main():
     print('\tresult2:', subtract(num2, num1))
     print('Their difference:', difference(num1, num2))
 
-def add(num1, num2):
+def add(num1, num2) -> str:
     """
     Add two numbers
     :param num1: number 1
@@ -29,7 +29,13 @@ def add(num1, num2):
 
     return str(int(num1) + int(num2))
 
-def difference(num1, num2):
+def difference(num1, num2) -> str:
+    """
+    Difference of two numbers
+    :param num1: number 1
+    :param num2: number 2
+    :return: a result as string
+    """
     if not valid_number(num1) or not valid_number(num2):
         return "Invalid input numbers"
 
@@ -38,7 +44,7 @@ def difference(num1, num2):
 
     return str(int(num2) - int(num1))
 
-def subtract(num1, num2):
+def subtract(num1, num2) -> str:
     """
     Subtract two numbers
     :param num1: number 1
