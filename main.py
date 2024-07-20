@@ -1,13 +1,9 @@
 """
 Author: Meng Moua
-Course: CSC500-1
+Course: CSC500
 Assignment: Module 1, Part 1
-    - Write a Python program to find the addition and subtraction of two numbers.
-    - Ask the user to input two numbers (num1 and num2). Given those two numbers,
-      add them together to find the output. Also, subtract the two numbers to find the output.
 """
 
-# Main driver
 def main():
     num1 = input("Enter num1: ")
     num2 = input("Enter num2: ")
